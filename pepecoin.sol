@@ -587,14 +587,14 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 pragma solidity ^0.8.0;
 
 
-contract PepeJunior is Ownable, ERC20 {
+contract PepeVersion2 is Ownable, ERC20 {
     bool public limited;
     uint256 public maxHoldingAmount;
     uint256 public minHoldingAmount;
     address public uniswapV2Pair;
     mapping(address => bool) public blacklists;
 
-    constructor(uint256 _totalSupply) ERC20("Pepe Junior", "PEPE") {
+    constructor(uint256 _totalSupply) ERC20("PEPE VERSION2", "PEPEV2") {
         _mint(msg.sender, _totalSupply);
     }
 
